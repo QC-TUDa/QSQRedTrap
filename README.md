@@ -46,8 +46,14 @@ All measurements were generated and can be analyzed with the [QSQlab](https://gi
 
 ## How to Cite
 
+If you use this dataset, please cite it as:
+
+> José Martínez et al. (2025). *QSQ Measurements in Mainz University <sup>40</sup>Ca<sup>+</sup> Ion Trap* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.21918587
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21918587.svg)](https://doi.org/10.5281/zenodo.21918587)
+
 - Academic work: *(to be added)*
-- DOI: *(to be added)*
+- DOI: [10.5281/zenodo.21918587](https://doi.org/10.5281/zenodo.21918587)
 
 ## License
 

@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "QSQ Measurements in Mainz University 40Ca+ Ion Trap"
+authors:
+  - family-names: "Martínez"
+    given-names: "José"
+    email: "tmartnez@students.uni-mainz.de"
+    affiliation: "QUANTUM, University of Mainz, Department of Physics, Staudingerweg 7, Germany"
+  - family-names: "Gachechiladze"
+    given-names: "Mariami"
+    email: "mariami.gachechiladze@tu-darmstadt.de"
+    affiliation: "Department of Computer Science, Technical University of Darmstadt, Darmstadt, Germany"
+  - family-names: "Miklin"
+    given-names: "Nikolai"
+    email: "nikolai.miklin@physik.tu-darmstadt.de"
+    affiliation: "Institute for Applied Physics, Technical University of Darmstadt, Darmstadt, Germany"
+  - family-names: "Schmidt-Kaler"
+    given-names: "Ferdinand"
+    email: "fsk@uni-mainz.de"
+    affiliation: "QUANTUM, University of Mainz, Department of Physics, Staudingerweg 7, Germany"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21918587"
+    description: "Zenodo archive of the dataset"
+repository-code: "https://github.com/QC-TUDa/QSQRedTrap"
+url: "https://doi.org/10.5281/zenodo.21918587"
+license: "CC-BY-4.0"
+date-released: "2026-08-13"
+keywords:
+  - quantum computing
+  - trapped ions
+  - QSQ certification
+  - single-qubit gates
+  - SPAM errors
