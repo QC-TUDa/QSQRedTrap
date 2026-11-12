@@ -12,6 +12,7 @@ Each JSON line represents one circuit with 1000 measurement shots:
 |---|---|
 | `counts` | Shot results, with `"0"` and `"1"` giving the number of shots measured in $\lvert 0\rangle$ and $\lvert 1\rangle$ respectively |
 | `amount_of_gates` | Number of $R_x(\pi/2)$ gates in the sequence |
+| `ideal_probs` | Ideal probabilities of measuring `"0"` and `"1"` after the gate sequence.|
 | `shots` | Number of measurement shots per circuit |
 | `gate` | Gate type applied (e.g. `"rx"`) |
 | `angles` | Angles $\theta, \phi, \lambda$ used for rotation. $\sqrt{X}\equiv R(\theta=\pi/2, \phi=0)$ |
