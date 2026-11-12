@@ -12,8 +12,10 @@ Each JSON line represents one circuit with 1000 measurement shots:
 |---|---|
 | `counts` | Shot results, with `"0"` and `"1"` giving the number of shots measured in $\lvert 0\rangle$ and $\lvert 1\rangle$ respectively |
 | `amount_of_gates` | Number of $R_x(\pi/2)$ gates in the sequence |
+| `shots` | Number of measurement shots per circuit |
 | `gate` | Gate type applied (e.g. `"rx"`) |
 | `angles` | Angles $\theta, \phi, \lambda$ used for rotation. $\sqrt{X}\equiv R(\theta=\pi/2, \phi=0)$ |
+| `measurement_basis` | Bloch sphere basis in which state-dependent measurements were performed|
 | `backend` | Identifier of the trap/backend used |
 | `timestamp` | Human-readable timestamp |
 | `unix_time` | Machine timestamp (Unix time) |
@@ -21,9 +23,14 @@ Each JSON line represents one circuit with 1000 measurement shots:
 Example:
 
 ```json
-{"counts": {"0": 941, "1": 59}, "amount_of_gates": 0, "gate": "rx", "angles": {"theta": 1.5707963267948966, "phi": null, "lam": null}, "backend": "RedTrapBackend", "timestamp": "23.07 18-01-07", "unix_time": 1753286467.6760588}
-{"counts": {"0": 954, "1": 46}, "amount_of_gates": 0, "gate": "rx", "angles": {"theta": 1.5707963267948966, "phi": null, "lam": null}, "backend": "RedTrapBackend", "timestamp": "23.07 18-01-33", "unix_time": 1753286493.3604624}
+{"counts": {"0": 941, "1": 59}, "amount_of_gates": 0, "ideal_probs": {"0": 1.0, "1": 0.0}, "shots": 1000, "gate": "rx", "angles": {"theta": 1.5707963267948966, "phi": null, "lam": null}, "measurement_basis": "Z", "backend": "RedTrapBackend", "timestamp": "23.07 18-01-07", "unix_time": 1753286467.6760588}
+{"counts": {"0": 954, "1": 46}, "amount_of_gates": 0, "ideal_probs": {"0": 1.0, "1": 0.0}, "shots": 1000, "gate": "rx", "angles": {"theta": 1.5707963267948966, "phi": null, "lam": null}, "measurement_basis": "Z", "backend": "RedTrapBackend", "timestamp": "23.07 18-01-33", "unix_time": 1753286493.3604624}
 ```
+
+The measurements present **global parameters** of:
+- 1000 `shots` per circuit
+- `"Z"` as the `measurement_basis`
+- `rx` as the `gate` and `"theta": 1.5707963267948966` as the only `angles`. (Representing an $R_x(\pi/2)$ rotation)
 
 ## Experiment Calibration
 
